@@ -1,0 +1,51 @@
+{
+	"name": "Rusty Bun",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+		  "installZsh": "true",
+		  "configureZshAsDefaultShell": "true",
+		  "installOhMyZsh": "false",
+		  "upgradePackages": "true"
+		},
+		"ghcr.io/devcontainers/features/rust:1": "latest",
+		"ghcr.io/devcontainers/features/git:1": {
+		  "version": "latest",
+		  "ppa": "false"
+		},
+		"ghcr.io/prulloac/devcontainer-features/bun:1.1.2": {}
+	  },
+	  "customizations": {
+		"vscode": {
+		  "extensions": [
+			"ms-azuretools.vscode-docker",
+			"dbaeumer.vscode-eslint",
+			"donjayamanne.githistory",
+			"christian-kohler.npm-intellisense",
+			"esbenp.prettier-vscode",
+			"prisma.prisma",
+			"bradlc.vscode-tailwindcss",
+			"davidanson.vscode-markdownlint"
+		  ],
+		  "settings": {
+			"terminal.integrated.defaultProfile.linux": "zsh",
+			"terminal.integrated.profiles.linux": {
+			  "zsh": {
+				"path": "/bin/zsh"
+			  }
+			},
+			"typescript.tsdk": "ui/node_modules/typescript/lib",
+			"tailwindCSS.experimental.classRegex": [
+			  [
+				"cva\\(([^)]*)\\)",
+				"[\"'`]([^\"'`]*).*?[\"'`]"
+			  ]
+			],
+			"editor.tabSize": 4
+		  }
+		}
+	  }
+}

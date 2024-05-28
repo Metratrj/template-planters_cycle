@@ -1,0 +1,13 @@
+{
+    "id": "rusty-bun",
+    "version": "0.1.0",
+    "name": "Rusty Bun",
+    "description": "A devcontainer template for rust and node",
+    "documentationURL": "https://github.com/Metratrj/template-planters_cycle/tree/main/src/rusty-bun",
+    "licenseURL": "https://github.com/Metratrj/template-planters_cycle/blob/main/LICENSE",
+    "options": {
+    },
+    "platforms": [
+        "Any"
+    ]
+}
