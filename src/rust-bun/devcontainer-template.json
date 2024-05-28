@@ -1,5 +1,5 @@
 {
-    "id": "rusty-bun",
+    "id": "rust-bun",
     "version": "0.1.0",
     "name": "Rusty Bun",
     "description": "A devcontainer template for rust and node",

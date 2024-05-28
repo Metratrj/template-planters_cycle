@@ -3,7 +3,7 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-
+	"postCreateCommand": "sh -c \"$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.2.0/zsh-in-docker.sh)\" -- -p git -p https://github.com/zsh-users/zsh-autosuggestions -p https://github.com/zsh-users/zsh-completions -p https://github.com/zsh-users/zsh-syntax-highlighting -p git-auto-fetch -p rust; cargo install sccache --locked; echo \"export RUSTC_WRAPPER=/usr/local/cargo/bin/sccache\" >> /home/codespace/.bashrc; echo \"export RUSTC_WRAPPER=/usr/local/cargo/bin/sccache\" >> /home/codespace/.zshrc",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {
 		  "installZsh": "true",
